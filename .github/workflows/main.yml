@@ -57,17 +57,17 @@ jobs:
         with:
           submodules: recursive
       - name: Download artifacts for Windows x64
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: SDL-windows-latest
           path: artifacts-windows-x64
       - name: Download artifacts for macOS
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: SDL-macos-latest
           path: artifacts-macos
       - name: Download artifacts for Linux x64
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: SDL-ubuntu-20.04
           path: artifacts-linux-x64
